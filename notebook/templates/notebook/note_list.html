@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ежедневник</title>
+</head>
+<body>
+    {% for note in notes %}
+        {{ note.published_date }}<br>
+        {{ note.title }}<br>
+        {{ note.text }}<br><br>
+    {% endfor %}
+</body>
+</html>
